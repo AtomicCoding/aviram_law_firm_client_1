@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface LayoutProps {
@@ -7,6 +7,8 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-lawfirm-cream">
       {/* Header */}
@@ -100,8 +102,28 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             </Link>
           </div>
 
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
           {/* Phone */}
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <svg
               className="w-5 h-5"
               viewBox="0 0 20 20"
@@ -118,6 +140,70 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             </span>
           </div>
         </nav>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-40 p-4">
+            <div className="flex flex-col gap-4">
+              <Link
+                to="/"
+                className={`font-['Mulish'] text-base font-bold ${
+                  currentPage === "home" ? "text-lawfirm-brown" : "text-white"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/services"
+                className={`font-['Mulish'] text-base font-bold ${
+                  currentPage === "services"
+                    ? "text-lawfirm-brown"
+                    : "text-white"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link
+                to="/about"
+                className={`font-['Mulish'] text-base font-bold ${
+                  currentPage === "about" ? "text-lawfirm-brown" : "text-white"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About us
+              </Link>
+              <Link
+                to="/contact"
+                className={`font-['Mulish'] text-base font-bold ${
+                  currentPage === "contact"
+                    ? "text-lawfirm-brown"
+                    : "text-white"
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact us
+              </Link>
+              <div className="flex items-center gap-3">
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.3351 14.0994V16.5994C18.3361 16.8315 18.2886 17.0612 18.1956 17.2739C18.1026 17.4865 17.9662 17.6774 17.7952 17.8343C17.6242 17.9912 17.4223 18.1107 17.2024 18.185C16.9826 18.2594 16.7496 18.287 16.5185 18.2661C13.9542 17.9875 11.491 17.1112 9.32682 15.7078C7.31334 14.4283 5.60626 12.7212 4.32682 10.7078C2.91846 8.53377 2.04202 6.05859 1.76848 3.48276C1.74766 3.25232 1.77505 3.02006 1.8489 2.80078C1.92275 2.5815 2.04146 2.38 2.19745 2.20911C2.35345 2.03822 2.54332 1.90169 2.75498 1.8082C2.96663 1.71471 3.19543 1.66631 3.42682 1.6661H5.92682C6.33124 1.66212 6.72331 1.80533 7.02995 2.06904C7.33659 2.33275 7.53688 2.69897 7.59348 3.09943C7.699 3.89949 7.89469 4.68504 8.17682 5.4411C8.28894 5.73937 8.3132 6.06353 8.24674 6.37516C8.18027 6.6868 8.02587 6.97286 7.80182 7.19943L6.74348 8.25776C7.92978 10.3441 9.65719 12.0715 11.7435 13.2578L12.8018 12.1994C13.0284 11.9754 13.3144 11.821 13.6261 11.7545C13.9377 11.688 14.2619 11.7123 14.5601 11.8244C15.3162 12.1066 16.1018 12.3022 16.9018 12.4078C17.3066 12.4649 17.6763 12.6688 17.9406 12.9807C18.2049 13.2926 18.3453 13.6907 18.3351 14.0994Z"
+                    fill="white"
+                  />
+                </svg>
+                <span className="text-white font-bold text-base font-['Inter']">
+                  (257) 388-6895
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Main Content */}
