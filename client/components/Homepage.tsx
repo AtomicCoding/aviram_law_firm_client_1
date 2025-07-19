@@ -326,7 +326,7 @@ const Homepage: React.FC = () => {
       <section
         className="relative h-65 flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/b581531e1783737280045335ed467c30e6095145?width=2880')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://images.pexels.com/photos/30483129/pexels-photo-30483129.jpeg')`,
         }}
       >
         <div className="flex flex-col items-center justify-center gap-10 text-center">
@@ -343,8 +343,8 @@ const Homepage: React.FC = () => {
       <section className="px-4 md:px-16 lg:px-20 py-12 md:py-15 flex flex-col lg:flex-row items-center gap-6">
         <img
           className="w-full lg:w-1/2 max-w-2xl"
-          src="https://api.builder.io/api/v1/image/assets/TEMP/d1f6b8c35230859c7d359713f3bf9f4680be6aa1?width=1052"
-          alt="Legal team"
+          src="https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg"
+          alt="Legal team meeting"
         />
         <div className="flex flex-col items-center justify-center gap-10 text-center lg:w-1/2">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish']">
