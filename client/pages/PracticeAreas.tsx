@@ -162,21 +162,100 @@ const PracticeAreas: React.FC = () => {
               </p>
             </Link>
 
-            {/* Additional Practice Areas */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            {/* Burn Injuries */}
+            <Link
+              to="/practice-areas/burn-injuries"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
+              <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
+                  <path d="M13.5 0.5C13.5 0.5 14.5 0.5 16.5 2.5C18.5 4.5 18.5 6.5 16.5 8.5C14.5 6.5 13.5 4.5 13.5 0.5M9.5 3C7.5 5 7.5 7 9.5 9C11.5 7 11.5 5 9.5 3M6.5 6.5C4.5 8.5 4.5 10.5 6.5 12.5C8.5 10.5 8.5 8.5 6.5 6.5M10 15C8 17 8 19 10 21C12 19 12 17 10 15Z" />
+                </svg>
+              </div>
+              <h3 className="text-lawfirm-brown font-bold text-xl font-['Mulish']">
+                Burn Injuries
+              </h3>
+              <p className="text-black text-sm font-['Inter']">
+                Workplace accidents, electrical burns, and defective product
+                burns requiring specialized medical care.
+              </p>
+            </Link>
+
+            {/* Slip and Fall */}
+            <Link
+              to="/practice-areas/slip-and-fall"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
+              <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
+                  <path d="M15.5 14H17L19 16V18H17.5L15.5 16V14M9.5 14H11L13 16V18H11.5L9.5 16V14M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2M5.5 7H18.5L17.5 9.5H6.5L5.5 7Z" />
+                </svg>
+              </div>
+              <h3 className="text-lawfirm-brown font-bold text-xl font-['Mulish']">
+                Slip and Fall
+              </h3>
+              <p className="text-black text-sm font-['Inter']">
+                Premises liability cases involving unsafe conditions at stores,
+                restaurants, and public places.
+              </p>
+            </Link>
+
+            {/* Products Liability */}
+            <Link
+              to="/practice-areas/products-liability"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M12 2L2 7V10C2 16 5.64 21.36 12 22C18.36 21.36 22 16 22 10V7L12 2M11 7H13V9H11V7M11 11H13V17H11V11Z" />
                 </svg>
               </div>
               <h3 className="text-lawfirm-brown font-bold text-xl font-['Mulish']">
-                Other Injuries
+                Products Liability
               </h3>
               <p className="text-black text-sm font-['Inter']">
-                Burn injuries, slip and fall, products liability, traumatic
-                brain injury, and other negligence claims.
+                Defective products, dangerous drugs, and faulty medical devices
+                that cause serious injuries.
               </p>
-            </div>
+            </Link>
+
+            {/* Traumatic Brain Injury */}
+            <Link
+              to="/practice-areas/traumatic-brain-injury"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
+              <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2M12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6Z" />
+                </svg>
+              </div>
+              <h3 className="text-lawfirm-brown font-bold text-xl font-['Mulish']">
+                Traumatic Brain Injury
+              </h3>
+              <p className="text-black text-sm font-['Inter']">
+                Concussions, severe head trauma, and cognitive injuries
+                requiring lifelong care and treatment.
+              </p>
+            </Link>
+
+            {/* Other Negligence */}
+            <Link
+              to="/practice-areas/other-negligence"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
+              <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
+                <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
+                  <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V10H17V12M15 16H7V14H15V16M17 8H7V6H17V8Z" />
+                </svg>
+              </div>
+              <h3 className="text-lawfirm-brown font-bold text-xl font-['Mulish']">
+                Other Negligence
+              </h3>
+              <p className="text-black text-sm font-['Inter']">
+                Pedestrian accidents, bicycle injuries, nursing home neglect,
+                and other personal injury claims.
+              </p>
+            </Link>
           </div>
         </div>
       </section>
