@@ -55,14 +55,14 @@ const Homepage: React.FC = () => {
           </p>
           <img
             className="w-60 h-11"
-            src="https://api.builder.io/api/v1/image/assets/TEMP/7013d9d00a9d5309f974668c6d05d1dc11a29f97?width=482"
-            alt="Partnership logos"
+            src="https://images.pexels.com/photos/6077447/pexels-photo-6077447.jpeg"
+            alt="Legal partnership documents"
           />
         </div>
         <div
           className="w-110 h-80 p-6 flex items-end bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/d7c28bbabfd266464616fbc149bf72223c77487e?width=880')`,
+            backgroundImage: `url('https://images.pexels.com/photos/7841799/pexels-photo-7841799.jpeg')`,
           }}
         >
           <span className="text-lawfirm-text-light font-bold text-base font-['Mulish']">
