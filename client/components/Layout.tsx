@@ -201,7 +201,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
                   />
                 </svg>
                 <span className="text-white font-bold text-base font-['Inter']">
-                  (257) 388-6895
+                  (310) 388-3488
                 </span>
               </div>
             </div>
