@@ -470,7 +470,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
 
           {/* Copyright */}
           <p className="text-white text-center text-base font-normal font-['Inter'] opacity-50">
-            ©Copyright Law Firm 2025. Designed by MJ Website Design
+            ©Copyright Aviram Law, APLC 2025. Designed by MJ Website Design
           </p>
         </div>
       </footer>
