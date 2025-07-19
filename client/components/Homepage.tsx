@@ -44,14 +44,15 @@ const Homepage: React.FC = () => {
       <section className="bg-white px-4 md:px-16 lg:px-20 py-16 md:py-21 flex flex-col lg:flex-row justify-between items-center gap-8">
         <div className="flex flex-col gap-5 max-w-2xl">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize">
-            Trusted legal partnerships
+            Experienced Legal Representation
           </h2>
           <p className="text-black text-xl font-normal leading-relaxed font-['Inter']">
-            Adipiscing nam neque hendrerit nec pellentesque diam a. Varius
-            quisque odio mauris lectus consequat sed. Pretium purus feugiat
-            volutpat pellentesque.
+            Aviram Law, APLC combines years of litigation experience with
+            personalized attention to achieve optimal results for our clients.
+            We handle personal injury cases throughout California with
+            professionalism and dedication.
             <br />
-            Potenti porta mauris nec vulputate.
+            Call (310) 388-3488 for your free consultation today.
           </p>
           <img
             className="w-60 h-11"
