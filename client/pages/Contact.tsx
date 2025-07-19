@@ -112,10 +112,10 @@ const Contact: React.FC = () => {
                   </h3>
                   <div className="flex flex-col gap-2">
                     <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                      temmink@outlook.com
+                      info@aviramlaw.com
                     </span>
                     <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                      mallanmba@msn.com
+                      Website: aviramlaw.com
                     </span>
                   </div>
                 </div>
