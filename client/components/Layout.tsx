@@ -158,15 +158,15 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
                 Home
               </Link>
               <Link
-                to="/services"
+                to="/practice-areas"
                 className={`font-['Mulish'] text-base font-bold ${
-                  currentPage === "services"
+                  currentPage === "practice-areas"
                     ? "text-lawfirm-brown"
                     : "text-white"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Services
+                Practice Areas
               </Link>
               <Link
                 to="/about"
