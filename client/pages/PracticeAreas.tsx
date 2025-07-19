@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 
 const PracticeAreas: React.FC = () => {
@@ -47,7 +48,10 @@ const PracticeAreas: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Car Accidents */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            <Link
+              to="/practice-areas/car-accident"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" />
@@ -61,10 +65,13 @@ const PracticeAreas: React.FC = () => {
                 uninsured drivers. We understand California's comparative fault
                 laws.
               </p>
-            </div>
+            </Link>
 
             {/* Motorcycle Accidents */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            <Link
+              to="/practice-areas/motorcycle-accident"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3M19 13C17.34 13 16 14.34 16 16C16 17.66 17.34 19 19 19C20.66 19 22 17.66 22 16C22 14.34 20.66 13 19 13M5 13C3.34 13 2 14.34 2 16C2 17.66 3.34 19 5 19C6.66 19 8 17.66 8 16C8 14.34 6.66 13 5 13Z" />
@@ -77,10 +84,13 @@ const PracticeAreas: React.FC = () => {
                 Serious injuries and bias against riders require experienced
                 representation. We fight for maximum compensation.
               </p>
-            </div>
+            </Link>
 
             {/* Truck Accidents */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            <Link
+              to="/practice-areas/truck-accident"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
@@ -93,10 +103,13 @@ const PracticeAreas: React.FC = () => {
                 Commercial trucks, freight carriers, federal regulations, and
                 complex insurance issues require specialized expertise.
               </p>
-            </div>
+            </Link>
 
             {/* Bus Accidents */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            <Link
+              to="/practice-areas/bus-accident"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z" />
@@ -109,10 +122,13 @@ const PracticeAreas: React.FC = () => {
                 School buses, charter, and public transport accidents. We
                 understand public entity claims and timing deadlines.
               </p>
-            </div>
+            </Link>
 
             {/* Dog Bites */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            <Link
+              to="/practice-areas/dog-bite"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M4.5 9.5C3.12 9.5 2 8.38 2 7S3.12 4.5 4.5 4.5 7 5.62 7 7 5.88 9.5 4.5 9.5M9 10L7.5 8.5C7.1 8.9 6.6 9.1 6 9.1S4.9 8.9 4.5 8.5L3 10C2.4 10.6 2 11.4 2 12.2V16H7V12.2C7 11.4 8.6 10.6 9 10M19.5 9.5C18.12 9.5 17 8.38 17 7S18.12 4.5 19.5 4.5 22 5.62 22 7 20.88 9.5 19.5 9.5M15 10L16.5 8.5C16.9 8.9 17.4 9.1 18 9.1S19.1 8.9 19.5 8.5L21 10C21.6 10.6 22 11.4 22 12.2V16H17V12.2C17 11.4 15.4 10.6 15 10M12 16C13.1 16 14 16.9 14 18S13.1 20 12 20 10 19.1 10 18 10.9 16 12 16Z" />
@@ -125,10 +141,13 @@ const PracticeAreas: React.FC = () => {
                 California's strict liability law protects victims. We handle
                 long-term trauma and infection risks.
               </p>
-            </div>
+            </Link>
 
             {/* Wrongful Death */}
-            <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
+            <Link
+              to="/practice-areas/wrongful-death"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 hover:shadow-lg transition duration-300"
+            >
               <div className="w-16 h-16 bg-lawfirm-brown rounded-full flex items-center justify-center">
                 <svg className="w-8 h-8 fill-white" viewBox="0 0 24 24">
                   <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2M21 9V7L15 13.5C14.8 13.8 14.4 14 14 14H10V16H14C14.4 16 14.8 16.2 15 16.5L21 23H23V21L17.5 15.5L21 9M1 9H7V15H9V9H15V7H1V9Z" />
@@ -141,7 +160,7 @@ const PracticeAreas: React.FC = () => {
                 Compassionate representation for families seeking justice. We
                 handle loss of consortium, funeral expenses, and future income.
               </p>
-            </div>
+            </Link>
 
             {/* Additional Practice Areas */}
             <div className="bg-white p-8 flex flex-col items-center text-center gap-4">
