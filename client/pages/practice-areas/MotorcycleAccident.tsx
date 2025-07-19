@@ -111,74 +111,6 @@ export const MotorcycleAccident: React.FC = () => {
                 </div>
               </div>
             </section>
-
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Common Motorcycle Accident Injuries
-              </h2>
-              <div className="space-y-4">
-                <div className="border-l-4 border-orange-600 pl-6">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                    Traumatic Brain Injuries
-                  </h3>
-                  <p className="text-gray-600">
-                    Even with helmets, head injuries are common and can have
-                    lifelong consequences.
-                  </p>
-                </div>
-                <div className="border-l-4 border-orange-600 pl-6">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                    Spinal Cord Injuries
-                  </h3>
-                  <p className="text-gray-600">
-                    Can result in partial or complete paralysis requiring
-                    extensive medical care.
-                  </p>
-                </div>
-                <div className="border-l-4 border-orange-600 pl-6">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                    Road Rash and Burns
-                  </h3>
-                  <p className="text-gray-600">
-                    Severe skin damage requiring multiple surgeries and skin
-                    grafts.
-                  </p>
-                </div>
-                <div className="border-l-4 border-orange-600 pl-6">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                    Broken Bones
-                  </h3>
-                  <p className="text-gray-600">
-                    Multiple fractures, particularly to arms, legs, and ribs.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Recent Success Stories
-              </h2>
-              <div className="bg-orange-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                  $1.8 Million Settlement
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Obtained substantial compensation for a motorcyclist who
-                  suffered multiple fractures and internal injuries when a
-                  driver made an illegal left turn at a busy Los Angeles
-                  intersection.
-                </p>
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                  $950,000 Verdict
-                </h3>
-                <p className="text-gray-600">
-                  Won at trial for a client who sustained severe road rash and
-                  orthopedic injuries in a lane-splitting accident, overcoming
-                  the defense's attempts to blame the motorcyclist.
-                </p>
-              </div>
-            </section>
           </div>
 
           {/* Sidebar */}
@@ -236,12 +168,11 @@ export const MotorcycleAccident: React.FC = () => {
       <section className="bg-orange-600 py-16">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-white font-bold text-3xl md:text-4xl mb-6">
-            Protect Your Rights After a Motorcycle Accident
+            Request a Free Case Evaluation
           </h2>
           <p className="text-orange-100 text-lg mb-8 max-w-2xl mx-auto">
-            Don't let insurance companies take advantage of you. Get an
-            experienced motorcycle accident lawyer who will fight for your
-            rights and the compensation you deserve.
+            Contact Aviram Law today for a free consultation. No fees unless we
+            win your case.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
