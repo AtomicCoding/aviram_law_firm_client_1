@@ -18,14 +18,23 @@ const About: React.FC = () => {
 
       {/* Our Attorneys Section */}
       <section className="px-4 md:px-16 lg:px-20 py-16 md:py-15 flex flex-col items-center gap-10">
-        <div className="flex flex-col items-center gap-6 max-w-2xl">
+        <div className="flex flex-col items-center gap-6 max-w-4xl">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize text-center">
-            Our attorneys
+            About Aviram Law, APLC
           </h2>
-          <p className="text-black text-center font-normal text-base font-['Inter']">
-            Varius quisque odio mauris lectus consequat sedretium purus feugiat
-            volutpat pell
-          </p>
+          <div className="text-black text-center font-normal text-base font-['Inter'] space-y-4">
+            <p>
+              Aviram Law, APLC is a leading Personal Injury law firm in
+              California, representing injured clients throughout the state who
+              are seeking justice for their injuries. Aviram Law is a litigation
+              and trial firm focused on professionalism and optimal results.
+            </p>
+            <p>
+              With years of experience handling auto accidents, premises
+              liability, dog bites, slip and fall, wrongful death, and
+              catastrophic injury, we have recovered millions for our clients.
+            </p>
+          </div>
         </div>
 
         {/* First Row of Attorney Cards */}
