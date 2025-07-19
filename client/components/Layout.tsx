@@ -264,7 +264,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
                   </svg>
                 </div>
                 <span className="text-white font-bold text-base font-['Inter']">
-                  Law Firm
+                  Aviram Law, APLC
                 </span>
               </div>
               <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
