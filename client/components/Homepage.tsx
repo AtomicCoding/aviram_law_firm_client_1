@@ -5,13 +5,26 @@ const Homepage: React.FC = () => {
   return (
     <Layout currentPage="home">
       {/* Hero Section */}
-      <section
-        className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://cdn.builder.io/o/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdef10ee28a38489b8aa387c1f468c5e1?alt=media&token=45dd42d9-b987-469e-a3d2-75323899ba7e&apiKey=f273f29613d947e0adfbbfd1507382bb')`,
-        }}
-      >
-        <div className="flex flex-col items-center justify-center gap-5 px-4 md:px-8 max-w-6xl text-center">
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src="https://cdn.builder.io/o/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fc9ca928092be470285702515cd2be437?alt=media&token=11f0ad15-f123-4ba8-8789-a6f617f73d2f&apiKey=f273f29613d947e0adfbbfd1507382bb"
+            type="video/mp4"
+          />
+        </video>
+
+        {/* Dark Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center gap-5 px-4 md:px-8 max-w-6xl text-center">
           <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
             Legal solutions for business and individual needs
           </h1>
