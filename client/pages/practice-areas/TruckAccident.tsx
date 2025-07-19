@@ -10,12 +10,8 @@ export const TruckAccident: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-white font-bold text-4xl md:text-5xl font-['Mulish'] mb-4">
-            Los Angeles Truck Accident Lawyers
+            Truck & Commercial Vehicle Accidents
           </h1>
-          <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
-            Specialized legal representation for commercial truck accident
-            victims
-          </p>
         </div>
       </section>
 
@@ -25,22 +21,20 @@ export const TruckAccident: React.FC = () => {
           {/* Main Content Column */}
           <div className="md:col-span-2">
             <section className="mb-12">
+              <p className="text-gray-600 text-lg mb-8">
+                Truck accidents require complex legal handling due to multiple
+                liable parties, state and federal regulations, and aggressive
+                insurance defenses.
+              </p>
+            </section>
+
+            <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Expert Truck Accident Attorneys in Los Angeles
+                Why Choose Aviram Law
               </h2>
               <p className="text-gray-600 text-lg mb-6">
-                Truck accidents are among the most devastating motor vehicle
-                accidents, often resulting in catastrophic injuries or
-                fatalities. The sheer size and weight of commercial trucks means
-                that collisions with passenger vehicles can have life-changing
-                consequences for victims and their families.
-              </p>
-              <p className="text-gray-600 text-lg mb-6">
-                At Aviram Law, APLC, our Los Angeles truck accident lawyers
-                understand the complexities involved in these cases. From
-                federal trucking regulations to multiple liable parties, truck
-                accident cases require specialized knowledge and extensive
-                resources to pursue successfully.
+                We understand federal trucking rules and have experience
+                litigating against trucking companies.
               </p>
             </section>
 
