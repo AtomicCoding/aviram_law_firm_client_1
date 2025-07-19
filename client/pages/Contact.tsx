@@ -52,10 +52,10 @@ const Contact: React.FC = () => {
                   </h3>
                   <div className="flex flex-col gap-3">
                     <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                      (257) 388-6895
+                      (310) 388-3488
                     </span>
                     <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                      (257) 388-6895
+                      Fax: (310) 388-9988
                     </span>
                   </div>
                 </div>
