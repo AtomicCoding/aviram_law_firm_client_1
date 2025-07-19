@@ -360,7 +360,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
                   Los Angeles, CA 90067
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  (257) 388-6895
+                  (310) 388-3488
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
                   temmink@outlook.com
