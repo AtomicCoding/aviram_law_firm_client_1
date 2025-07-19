@@ -25,16 +25,88 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             >
               Home
             </Link>
-            <Link
-              to="/practice-areas"
-              className={`font-['Mulish'] text-base font-bold ${
-                currentPage === "practice-areas"
-                  ? "text-lawfirm-brown"
-                  : "text-white"
-              }`}
-            >
-              Practice Areas
-            </Link>
+            <div className="relative group">
+              <Link
+                to="/practice-areas"
+                className={`font-['Mulish'] text-base font-bold ${
+                  currentPage === "practice-areas"
+                    ? "text-lawfirm-brown"
+                    : "text-white"
+                }`}
+              >
+                Practice Areas
+              </Link>
+              <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 z-50">
+                <div className="py-2">
+                  <Link
+                    to="/practice-areas/car-accident"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Car Accidents
+                  </Link>
+                  <Link
+                    to="/practice-areas/motorcycle-accident"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Motorcycle Accidents
+                  </Link>
+                  <Link
+                    to="/practice-areas/truck-accident"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Truck Accidents
+                  </Link>
+                  <Link
+                    to="/practice-areas/bus-accident"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Bus Accidents
+                  </Link>
+                  <Link
+                    to="/practice-areas/dog-bite"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Dog Bites
+                  </Link>
+                  <Link
+                    to="/practice-areas/wrongful-death"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Wrongful Death
+                  </Link>
+                  <Link
+                    to="/practice-areas/burn-injuries"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Burn Injuries
+                  </Link>
+                  <Link
+                    to="/practice-areas/slip-and-fall"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Slip and Fall
+                  </Link>
+                  <Link
+                    to="/practice-areas/products-liability"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Products Liability
+                  </Link>
+                  <Link
+                    to="/practice-areas/traumatic-brain-injury"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Traumatic Brain Injury
+                  </Link>
+                  <Link
+                    to="/practice-areas/other-negligence"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100 font-['Mulish'] text-sm"
+                  >
+                    Other Negligence
+                  </Link>
+                </div>
+              </div>
+            </div>
             <Link
               to="/about"
               className={`font-['Mulish'] text-base font-bold ${
