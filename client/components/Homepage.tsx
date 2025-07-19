@@ -327,13 +327,13 @@ const Homepage: React.FC = () => {
       </section>
 
       {/* Legal Excellence Section */}
-      <section className="px-45 py-15 flex items-center gap-6">
+      <section className="px-4 md:px-16 lg:px-20 py-12 md:py-15 flex flex-col lg:flex-row items-center gap-6">
         <img
-          className="w-131 h-131"
+          className="w-full lg:w-1/2 max-w-2xl"
           src="https://api.builder.io/api/v1/image/assets/TEMP/d1f6b8c35230859c7d359713f3bf9f4680be6aa1?width=1052"
           alt="Legal team"
         />
-        <div className="flex flex-col items-center justify-center gap-10 text-center max-w-131">
+        <div className="flex flex-col items-center justify-center gap-10 text-center lg:w-1/2">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish']">
             Legal Excellence, Personalized Care
           </h2>
@@ -349,7 +349,7 @@ const Homepage: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-white py-25 flex flex-col items-center gap-5">
+      <section className="bg-white py-16 md:py-25 flex flex-col items-center gap-5">
         <div className="flex flex-col items-center gap-6 max-w-159">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize text-center">
             What our client says
@@ -358,8 +358,8 @@ const Homepage: React.FC = () => {
             Our Testimonials
           </p>
         </div>
-        <div className="flex justify-between items-center px-18 w-full">
-          <div className="flex flex-col gap-5 max-w-159 px-28">
+        <div className="flex flex-col lg:flex-row justify-between items-center px-4 md:px-16 lg:px-20 w-full gap-8">
+          <div className="flex flex-col gap-5 w-full lg:w-1/2 px-4 lg:px-16">
             <p className="text-black text-xl font-normal leading-relaxed font-['Inter']">
               Adipiscing nam neque hendrerit nec pellentesque diam a. Varius
               quisque odio mauris lectus consequat sed. Pretium purus feugiat
@@ -404,12 +404,12 @@ const Homepage: React.FC = () => {
 
       {/* Contact Form Section */}
       <section
-        className="relative py-30 px-45 flex items-center justify-center gap-33 bg-cover bg-center"
+        className="relative py-16 md:py-30 px-4 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/bf58f53e62571d2363c7deca4166f6aeba808ee8?width=2880')`,
         }}
       >
-        <div className="flex flex-col items-center gap-10 py-30">
+        <div className="flex flex-col items-center gap-10 py-16 lg:py-30">
           <div className="flex flex-col items-center gap-1">
             <span className="text-white font-bold text-xl font-['Inter']">
               Lawyer
@@ -470,7 +470,7 @@ const Homepage: React.FC = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-lawfirm-cream-dark p-10 flex flex-col gap-6 w-131">
+        <div className="bg-lawfirm-cream-dark p-6 md:p-10 flex flex-col gap-6 w-full lg:w-auto lg:min-w-96">
           <div className="flex gap-6">
             <div className="flex flex-col gap-1.5 flex-1">
               <label className="text-black font-bold text-base font-['Inter']">
@@ -558,7 +558,7 @@ const Homepage: React.FC = () => {
       </section>
 
       {/* Blog Section */}
-      <section className="bg-lawfirm-cream py-15 flex flex-col items-center gap-10">
+      <section className="bg-lawfirm-cream py-12 md:py-15 flex flex-col items-center gap-10">
         <div className="flex flex-col items-center gap-6 max-w-159">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize text-center">
             Our blog
@@ -568,9 +568,9 @@ const Homepage: React.FC = () => {
             odio
           </p>
         </div>
-        <div className="flex justify-center gap-6 px-18">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-16 lg:px-20">
           {/* Blog Card 1 */}
-          <div className="flex flex-col max-w-xs">
+          <div className="flex flex-col">
             <img
               className="h-70 w-full object-cover"
               src="https://api.builder.io/api/v1/image/assets/TEMP/5173ba20672b19417617d1b8cb67b018f4ddc211?width=832"
@@ -613,7 +613,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* Blog Card 2 */}
-          <div className="flex flex-col max-w-xs">
+          <div className="flex flex-col">
             <img
               className="h-70 w-full object-cover"
               src="https://api.builder.io/api/v1/image/assets/TEMP/4e065f2c64342218bff4530c0e47d1bba7f73c21?width=832"
@@ -656,7 +656,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* Blog Card 3 */}
-          <div className="flex flex-col max-w-xs">
+          <div className="flex flex-col">
             <img
               className="h-70 w-full object-cover"
               src="https://api.builder.io/api/v1/image/assets/TEMP/6f14742603a957e1f9b0a6a3f7fd256e6f8fb917?width=832"
