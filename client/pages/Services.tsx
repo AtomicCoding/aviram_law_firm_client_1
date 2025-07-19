@@ -8,7 +8,7 @@ const Services: React.FC = () => {
       <section
         className="relative h-80 flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/15466e61f789f5b00e101bbe0a4903e5cc73b871?width=2880')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg')`,
         }}
       >
         <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase">
@@ -242,13 +242,13 @@ const Services: React.FC = () => {
       <section
         className="relative h-65 flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/67f5a29f82d5d9b05d82ab3f24b6ac1d4a15d72d?width=2880')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), url('https://images.pexels.com/photos/7641842/pexels-photo-7641842.jpeg')`,
         }}
       >
         <img
           className="w-32 h-28 md:w-49 md:h-42 absolute left-4 md:left-18"
-          src="https://api.builder.io/api/v1/image/assets/TEMP/cdfd02208797f4450e5475046cdb8f83ece0111b?width=392"
-          alt="Justice figure"
+          src="https://images.pexels.com/photos/6077123/pexels-photo-6077123.jpeg"
+          alt="Legal justice scales"
         />
         <div className="flex flex-col items-center justify-center gap-3">
           <h2 className="text-white font-bold text-4xl font-['Mulish'] capitalize max-w-159 text-center">
@@ -869,7 +869,7 @@ const Services: React.FC = () => {
       <section
         className="relative py-16 md:py-30 px-4 md:px-16 lg:px-20 flex flex-col items-center gap-10 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/663e0adc0b6a79f98bc74b734aea33918b9ba1b1?width=2880')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://images.pexels.com/photos/4427611/pexels-photo-4427611.jpeg')`,
         }}
       >
         <h2 className="text-white font-bold text-5xl font-['Mulish'] capitalize text-center max-w-169">
