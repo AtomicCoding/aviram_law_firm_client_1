@@ -12,7 +12,7 @@ const About: React.FC = () => {
         }}
       >
         <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase text-center">
-          About Us
+          About Aviram Law, APLC – California's Leading Injury Attorneys
         </h1>
       </section>
 
