@@ -405,7 +405,7 @@ const Homepage: React.FC = () => {
           <div
             className="h-62 bg-cover bg-center flex items-end p-9"
             style={{
-              backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/f58516f4c1b6e3b8fbb9280c0acb47b0bce0f565?width=612')`,
+              backgroundImage: `url('https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg')`,
             }}
           >
             <span className="text-lawfirm-text-light font-bold text-xl font-['Inter']">
@@ -419,7 +419,7 @@ const Homepage: React.FC = () => {
       <section
         className="relative py-16 md:py-30 px-4 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/bf58f53e62571d2363c7deca4166f6aeba808ee8?width=2880')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://images.pexels.com/photos/6077297/pexels-photo-6077297.jpeg')`,
         }}
       >
         <div className="flex flex-col items-center gap-10 py-16 lg:py-30">
