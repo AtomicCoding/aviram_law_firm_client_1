@@ -8,7 +8,7 @@ const Homepage: React.FC = () => {
       <section
         className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/3f946920f2063b3a25bb25c8c34dbe3ddcc2591a?width=2880')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://cdn.builder.io/o/assets%2Ff273f29613d947e0adfbbfd1507382bb%2Fdef10ee28a38489b8aa387c1f468c5e1?alt=media&token=45dd42d9-b987-469e-a3d2-75323899ba7e&apiKey=f273f29613d947e0adfbbfd1507382bb')`,
         }}
       >
         <div className="flex flex-col items-center justify-center gap-5 px-4 md:px-8 max-w-6xl text-center">
