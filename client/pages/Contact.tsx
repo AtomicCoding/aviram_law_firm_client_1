@@ -28,12 +28,12 @@ const Contact: React.FC = () => {
           <div className="w-full lg:w-1/2 flex flex-col gap-16">
             <div className="flex flex-col gap-6">
               <h2 className="text-white font-bold text-5xl font-['Mulish'] capitalize">
-                Have any questions? Feel free to contact us!
+                Have legal questions? Contact Aviram Law, APLC!
               </h2>
               <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                Adipiscing nam neque hendrerit nec pellentesque diam a. Varius
-                quisque odio mauris lectus consequat sed. Pretium purus feugiat
-                volutpat
+                Call (310) 388-3488 or complete the form below for a free
+                consultation! We're here to help you get the justice and
+                compensation you deserve.
               </p>
             </div>
 
