@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         }}
       >
         <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase text-center">
-          Contact Us
+          Get In Touch With Us
         </h1>
       </section>
 
