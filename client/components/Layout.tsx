@@ -375,16 +375,22 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
               </h3>
               <div className="flex flex-col gap-6">
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  Banking and Finance
+                  Car Accidents
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  Business Law
+                  Motorcycle Accidents
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  Real Estate
+                  Truck Accidents
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  Family Law
+                  Wrongful Death
+                </p>
+                <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
+                  Slip and Fall
+                </p>
+                <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
+                  Dog Bites
                 </p>
               </div>
             </div>
