@@ -40,80 +40,75 @@ export const MotorcycleAccident: React.FC = () => {
 
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Common Causes of Motorcycle Accidents
+                What You May Be Entitled To
               </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Left-Turn Accidents
-                  </h3>
-                  <p className="text-gray-600">
-                    Cars making left turns across the path of oncoming
-                    motorcycles, often citing "didn't see the motorcycle."
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Lane Splitting Incidents
-                  </h3>
-                  <p className="text-gray-600">
-                    While legal in California, improper lane splitting can lead
-                    to serious accidents.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Rear-End Collisions
-                  </h3>
-                  <p className="text-gray-600">
-                    Distracted or following drivers who fail to see stopped or
-                    slowing motorcycles.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Road Hazards
-                  </h3>
-                  <p className="text-gray-600">
-                    Potholes, debris, oil spills, and poor road maintenance that
-                    pose greater dangers to motorcyclists.
-                  </p>
-                </div>
-              </div>
+              <ul className="space-y-3 text-gray-600 text-lg">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-4"></span>
+                  Emergency care
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-4"></span>
+                  Surgery/rehabilitation
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-4"></span>
+                  Bike replacement
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-4"></span>
+                  Loss of income
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-4"></span>
+                  Emotional distress
+                </li>
+              </ul>
             </section>
 
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Fighting Motorcycle Bias
+                What to Do After a Crash
               </h2>
-              <p className="text-gray-600 text-lg mb-6">
-                Unfortunately, motorcycle riders often face unfair stereotypes
-                and assumptions about their riding behavior. Insurance companies
-                frequently try to blame motorcycle riders for accidents, even
-                when the other driver was clearly at fault.
-              </p>
-              <div className="bg-orange-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                  We Combat Bias With Facts
-                </h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
-                    Thorough accident reconstruction
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
-                    Expert witness testimony
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
-                    Video evidence analysis
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
-                    Witness statements
-                  </li>
-                </ul>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    1
+                  </div>
+                  <div>
+                    <p className="text-gray-600 text-lg">Seek immediate care</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    2
+                  </div>
+                  <div>
+                    <p className="text-gray-600 text-lg">
+                      Get witness statements
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    3
+                  </div>
+                  <div>
+                    <p className="text-gray-600 text-lg">
+                      Save helmet and gear
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    4
+                  </div>
+                  <div>
+                    <p className="text-gray-600 text-lg">
+                      Don't speak with adjusters alone
+                    </p>
+                  </div>
+                </div>
               </div>
             </section>
 
