@@ -145,12 +145,11 @@ export const CarAccident: React.FC = () => {
       <section className="bg-blue-600 py-16">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-white font-bold text-3xl md:text-4xl mb-6">
-            Don't Wait - Contact Our Car Accident Lawyers Today
+            Request a Free Case Evaluation
           </h2>
           <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-            Time is critical in car accident cases. Evidence can disappear,
-            witnesses can forget details, and California's statute of
-            limitations limits how long you have to file a claim.
+            Contact Aviram Law today for a free consultation. No fees unless we
+            win your case.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
