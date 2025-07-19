@@ -355,9 +355,9 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
               </h3>
               <div className="flex flex-col gap-6">
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  43 W. Wellington Road Fairhope
+                  1801 Century Park East, 24th Floor
                   <br />
-                  AL 36532
+                  Los Angeles, CA 90067
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
                   (257) 388-6895
