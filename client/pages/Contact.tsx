@@ -138,10 +138,10 @@ const Contact: React.FC = () => {
                   </h3>
                   <div className="flex flex-col gap-2">
                     <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                      Mon-Fri 08:00AM - 08:00PM
+                      Monday - Friday: 9:00 AM - 6:00 PM
                     </span>
                     <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                      Sat-Sun 10:00 AM - 02:00PM
+                      24/7 Emergency Line Available
                     </span>
                   </div>
                 </div>
