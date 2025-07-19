@@ -363,7 +363,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
                   (310) 388-3488
                 </p>
                 <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  temmink@outlook.com
+                  info@aviramlaw.com
                 </p>
               </div>
             </div>
