@@ -210,12 +210,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer
-        className="relative bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/9df1f6cfdc2c3c5d6e10426136e5bfc5709812c1?width=2880')`,
-        }}
-      >
+      <footer className="bg-black">
         <div className="w-full px-4 md:px-16 lg:px-20 py-12 md:py-15 flex flex-col items-center gap-16">
           <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-32 w-full">
             {/* Left Column - Logo and Description */}
