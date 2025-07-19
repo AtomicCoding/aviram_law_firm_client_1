@@ -76,10 +76,22 @@ const Contact: React.FC = () => {
                   <h3 className="text-white font-bold text-2xl font-['Mulish']">
                     Physical Address
                   </h3>
-                  <span className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                    43 W. Wellington Road <br />
-                    Fairhope AL 36532
-                  </span>
+                  <div className="text-white text-base font-normal leading-relaxed font-['Inter'] space-y-3">
+                    <div>
+                      <strong>Los Angeles Office:</strong>
+                      <br />
+                      1801 Century Park East, 24th Floor
+                      <br />
+                      Los Angeles, CA 90067
+                    </div>
+                    <div>
+                      <strong>Calabasas Office:</strong>
+                      <br />
+                      23901 Calabasas Rd. Suite 2074
+                      <br />
+                      Los Angeles, CA 91302
+                    </div>
+                  </div>
                 </div>
               </div>
 
