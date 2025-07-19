@@ -10,11 +10,8 @@ export const MotorcycleAccident: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-white font-bold text-4xl md:text-5xl font-['Mulish'] mb-4">
-            Los Angeles Motorcycle Accident Lawyers
+            Motorcycle Accident Representation
           </h1>
-          <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
-            Fighting for motorcycle riders' rights and maximum compensation
-          </p>
         </div>
       </section>
 
@@ -24,22 +21,20 @@ export const MotorcycleAccident: React.FC = () => {
           {/* Main Content Column */}
           <div className="md:col-span-2">
             <section className="mb-12">
+              <p className="text-gray-600 text-lg mb-8">
+                Riders often face bias and severe injuries. We fight to ensure
+                their rights are protected and compensation is maximized.
+              </p>
+            </section>
+
+            <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Experienced Motorcycle Accident Attorneys
+                Why Choose Aviram Law
               </h2>
               <p className="text-gray-600 text-lg mb-6">
-                Motorcycle accidents often result in devastating injuries due to
-                the lack of protection that motorcycles provide compared to
-                cars. At Aviram Law, APLC, we understand the unique challenges
-                that motorcycle accident victims face, including bias from
-                insurance companies and misconceptions about motorcycle safety.
-              </p>
-              <p className="text-gray-600 text-lg mb-6">
-                Our Los Angeles motorcycle accident lawyers have extensive
-                experience representing injured riders throughout California. We
-                know the roads, traffic patterns, and common causes of
-                motorcycle accidents in the area, and we use this knowledge to
-                build strong cases for our clients.
+                We understand the physics and bias involved in motorcycle
+                crashes and are skilled in demonstrating liability to insurers
+                and juries.
               </p>
             </section>
 
