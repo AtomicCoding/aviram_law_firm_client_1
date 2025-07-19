@@ -286,15 +286,16 @@ const Contact: React.FC = () => {
 
         <div className="flex flex-col gap-3 text-center lg:text-left">
           <h2 className="text-white font-bold text-4xl font-['Mulish'] capitalize">
-            Have legal questions? Ask our experts!
+            Free Consultation Available!
           </h2>
           <p className="text-white text-base font-normal font-['Mulish']">
-            Lectus eget nisl orci elit malesuada id ipsum at velit.
+            Call (310) 388-3488 now or complete our form for immediate legal
+            assistance.
           </p>
         </div>
 
         <button className="bg-white text-lawfirm-brown font-bold text-xl font-['Mulish'] py-4 px-8">
-          Ask an expert
+          Get Free Consultation
         </button>
       </section>
     </Layout>
