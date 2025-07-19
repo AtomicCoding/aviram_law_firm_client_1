@@ -26,12 +26,14 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
               Home
             </Link>
             <Link
-              to="/services"
+              to="/practice-areas"
               className={`font-['Mulish'] text-base font-bold ${
-                currentPage === "services" ? "text-lawfirm-brown" : "text-white"
+                currentPage === "practice-areas"
+                  ? "text-lawfirm-brown"
+                  : "text-white"
               }`}
             >
-              Services
+              Practice Areas
             </Link>
             <Link
               to="/about"
