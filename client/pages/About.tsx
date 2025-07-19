@@ -11,50 +11,53 @@ const About: React.FC = () => {
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('https://images.pexels.com/photos/6077297/pexels-photo-6077297.jpeg')`,
         }}
       >
-        <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase text-center">
+                <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase text-center">
           About Aviram Law, APLC – California's Leading Injury Attorneys
         </h1>
       </section>
 
       {/* Our Attorneys Section */}
       <section className="px-4 md:px-16 lg:px-20 py-16 md:py-15 flex flex-col items-center gap-10">
-        <div className="flex flex-col items-center gap-6 max-w-4xl">
+                <div className="flex flex-col items-center gap-6 max-w-4xl">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize text-center">
             About Aviram Law, APLC
           </h2>
           <div className="text-black text-center font-normal text-base font-['Inter'] space-y-4">
             <p>
-              Aviram Law, APLC is a leading Personal Injury law firm in
-              California, representing injured clients throughout the state who
-              are seeking justice for their injuries. Aviram Law is a litigation
-              and trial firm focused on professionalism and optimal results.
+              Aviram Law, APLC is a leading Personal Injury law firm in California, representing injured clients throughout the state who are seeking justice for their injuries. Aviram Law is a litigation and trial firm focused on professionalism and optimal results.
             </p>
             <p>
-              With years of experience handling auto accidents, premises
-              liability, dog bites, slip and fall, wrongful death, and
-              catastrophic injury, we have recovered millions for our clients.
+              With years of experience handling auto accidents, premises liability, dog bites, slip and fall, wrongful death, and catastrophic injury, we have recovered millions for our clients.
             </p>
           </div>
         </div>
 
-        {/* First Row of Attorney Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
-          {/* Attorney 1 */}
-          <div className="flex flex-col items-center gap-3">
+                {/* Roy Aviram Attorney Profile */}
+        <div className="flex flex-col lg:flex-row items-center gap-8 w-full max-w-6xl">
+          <div className="w-full lg:w-1/3">
             <img
-              className="w-full aspect-square object-cover"
+              className="w-full aspect-square object-cover rounded-lg"
               src="https://images.pexels.com/photos/7841799/pexels-photo-7841799.jpeg"
-              alt="Jackson Bauer"
+              alt="Roy Aviram"
             />
-            <div className="flex flex-col items-center gap-3">
-              <div className="flex flex-col items-center gap-3">
-                <h3 className="text-black font-bold text-2xl font-['Mulish'] text-center">
-                  Jackson Bauer
-                </h3>
-                <p className="text-lawfirm-brown font-bold text-base font-['Inter'] text-center">
-                  Finance Lawyer
-                </p>
-              </div>
+          </div>
+          <div className="w-full lg:w-2/3 flex flex-col gap-6">
+            <div className="flex flex-col gap-3">
+              <h3 className="text-lawfirm-brown font-bold text-4xl font-['Mulish']">
+                Roy Aviram
+              </h3>
+              <p className="text-lawfirm-brown font-bold text-xl font-['Inter']">
+                Founding Partner & Lead Trial Attorney
+              </p>
+            </div>
+            <div className="text-black text-base font-normal leading-relaxed font-['Inter'] space-y-4">
+              <p>
+                Roy Aviram is the founding partner and lead trial attorney at Aviram Law, APLC. He graduated cum laude, earned his Master's in Business Administration from Cal Poly San Luis Obispo, and his Juris Doctor from Pepperdine University School of Law.
+              </p>
+              <p>
+                He holds a Certificate in Dispute Resolution from the Straus Institute and is fluent in Spanish and Hebrew, allowing him to serve California's diverse communities with personalized legal representation.
+              </p>
+            </div>
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 bg-white flex items-center justify-center">
                   <svg className="w-3 h-3 fill-black" viewBox="0 0 7 14">
