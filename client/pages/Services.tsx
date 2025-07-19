@@ -17,13 +17,13 @@ const Services: React.FC = () => {
       </section>
 
       {/* Tailored Legal Solutions Section */}
-      <section className="px-18 py-15 flex justify-between items-start">
-        <div className="max-w-162 flex flex-col gap-4">
+      <section className="px-4 md:px-16 lg:px-20 py-12 md:py-15 flex flex-col lg:flex-row justify-between items-start gap-8">
+        <div className="w-full lg:w-1/2 flex flex-col gap-4">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize">
             Tailored Legal Solutions, Exceptional Results
           </h2>
         </div>
-        <div className="max-w-159 flex flex-col gap-3">
+        <div className="w-full lg:w-1/2 flex flex-col gap-3">
           <p className="text-black text-base font-normal leading-relaxed font-['Inter']">
             Tellus aliquet volutpat diam nulla consectetur. Sit at consectetur
             nam velit sollicitudin id aliquam fusce. In urna vestibulum ac
@@ -62,12 +62,12 @@ const Services: React.FC = () => {
       </section>
 
       {/* Service Steps Cards */}
-      <section className="px-18 pb-15 flex flex-col gap-6">
+      <section className="px-4 md:px-16 lg:px-20 pb-12 md:pb-15 flex flex-col gap-6">
         {/* Row 1 */}
-        <div className="flex gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Card 1 */}
-          <div className="bg-white p-10 flex items-center gap-6 flex-1 shadow-sm">
-            <div className="flex flex-col justify-center gap-3 flex-1">
+          <div className="bg-white p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+            <div className="flex flex-col justify-center gap-3 w-full">
               <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish']">
                 1.Schedule a time
               </h3>
@@ -76,7 +76,7 @@ const Services: React.FC = () => {
                 feugiat volut
               </p>
             </div>
-            <div className="w-25 h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
+            <div className="w-20 h-20 md:w-25 md:h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
               <svg
                 className="w-16 h-16"
                 viewBox="0 0 64 64"
@@ -93,8 +93,8 @@ const Services: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white p-10 flex items-center gap-6 flex-1 shadow-sm">
-            <div className="flex flex-col justify-center gap-3 flex-1">
+          <div className="bg-white p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+            <div className="flex flex-col justify-center gap-3 w-full">
               <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish']">
                 2.Meet a consultant
               </h3>
@@ -103,7 +103,7 @@ const Services: React.FC = () => {
                 urna vestibulum ac eleifend quis
               </p>
             </div>
-            <div className="w-25 h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
+            <div className="w-20 h-20 md:w-25 md:h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
               <svg
                 className="w-16 h-16"
                 viewBox="0 0 64 64"
@@ -121,10 +121,10 @@ const Services: React.FC = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="flex gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Card 3 */}
-          <div className="bg-white p-10 flex items-center gap-6 flex-1 shadow-sm">
-            <div className="flex flex-col justify-center gap-3 flex-1">
+          <div className="bg-white p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+            <div className="flex flex-col justify-center gap-3 w-full">
               <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish']">
                 3.Successful planning
               </h3>
@@ -133,7 +133,7 @@ const Services: React.FC = () => {
                 Ultrices varius sed quam lectus interdum
               </p>
             </div>
-            <div className="w-25 h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
+            <div className="w-20 h-20 md:w-25 md:h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
               <svg
                 className="w-16 h-16"
                 viewBox="0 0 64 64"
@@ -185,8 +185,8 @@ const Services: React.FC = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white p-10 flex items-center gap-6 flex-1 shadow-sm">
-            <div className="flex flex-col justify-center gap-3 flex-1">
+          <div className="bg-white p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm">
+            <div className="flex flex-col justify-center gap-3 w-full">
               <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish']">
                 4.Successful case
               </h3>
@@ -195,7 +195,7 @@ const Services: React.FC = () => {
                 commodo in sed
               </p>
             </div>
-            <div className="w-25 h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
+            <div className="w-20 h-20 md:w-25 md:h-25 bg-lawfirm-brown flex items-center justify-center flex-shrink-0">
               <svg
                 className="w-16 h-16"
                 viewBox="0 0 64 64"
@@ -246,7 +246,7 @@ const Services: React.FC = () => {
         }}
       >
         <img
-          className="w-49 h-42 absolute left-18"
+          className="w-32 h-28 md:w-49 md:h-42 absolute left-4 md:left-18"
           src="https://api.builder.io/api/v1/image/assets/TEMP/cdfd02208797f4450e5475046cdb8f83ece0111b?width=392"
           alt="Justice figure"
         />
@@ -258,13 +258,13 @@ const Services: React.FC = () => {
             Lectus eget nisl orci elit malesuada id ipsum at velit.
           </p>
         </div>
-        <button className="bg-lawfirm-brown text-white font-bold text-xl font-['Mulish'] px-8 py-3 absolute right-18">
+        <button className="bg-lawfirm-brown text-white font-bold text-xl font-['Mulish'] px-6 md:px-8 py-3 absolute right-4 md:right-18">
           Ask an expert
         </button>
       </section>
 
       {/* Practice Areas Section */}
-      <section className="px-18 py-15 flex flex-col items-center gap-10">
+      <section className="px-4 md:px-16 lg:px-20 py-12 md:py-15 flex flex-col items-center gap-10">
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize">
             Practice Areas
@@ -279,7 +279,7 @@ const Services: React.FC = () => {
           {/* Row 1 */}
           <div className="flex justify-center gap-6">
             {/* Banking and Finance */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -345,7 +345,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* Family Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -403,7 +403,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* Business Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -468,7 +468,7 @@ const Services: React.FC = () => {
           {/* Row 2 */}
           <div className="flex justify-center gap-6">
             {/* Real Estate */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -522,7 +522,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* Civil Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -588,7 +588,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* Corporate Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -645,7 +645,7 @@ const Services: React.FC = () => {
           {/* Row 3 */}
           <div className="flex justify-center gap-6">
             {/* Criminal Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -715,7 +715,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* Immigration Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -773,7 +773,7 @@ const Services: React.FC = () => {
             </div>
 
             {/* International Law */}
-            <div className="bg-white p-10 flex flex-col gap-3 w-104">
+            <div className="bg-white p-6 md:p-10 flex flex-col gap-3">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -867,7 +867,7 @@ const Services: React.FC = () => {
 
       {/* FAQ Section */}
       <section
-        className="relative py-30 px-45 flex flex-col items-center gap-10 bg-cover bg-center"
+        className="relative py-16 md:py-30 px-4 md:px-16 lg:px-20 flex flex-col items-center gap-10 bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/663e0adc0b6a79f98bc74b734aea33918b9ba1b1?width=2880')`,
         }}
@@ -875,7 +875,7 @@ const Services: React.FC = () => {
         <h2 className="text-white font-bold text-5xl font-['Mulish'] capitalize text-center max-w-169">
           Frequently Asked Question
         </h2>
-        <div className="flex flex-col max-w-269">
+        <div className="flex flex-col w-full max-w-4xl">
           {/* FAQ 1 */}
           <div className="flex flex-col border-b border-white border-opacity-80">
             <div className="flex justify-between items-center py-6">
