@@ -11,7 +11,7 @@ const Homepage: React.FC = () => {
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://api.builder.io/api/v1/image/assets/TEMP/3f946920f2063b3a25bb25c8c34dbe3ddcc2591a?width=2880')`,
         }}
       >
-        <div className="flex flex-col items-center justify-center gap-5 px-18 max-w-6xl text-center">
+        <div className="flex flex-col items-center justify-center gap-5 px-4 md:px-8 max-w-6xl text-center">
           <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
             Legal solutions for business and individual needs
           </h1>
@@ -28,7 +28,7 @@ const Homepage: React.FC = () => {
       </section>
 
       {/* Trusted Legal Partnerships Section */}
-      <section className="bg-white px-18 py-21 flex justify-between items-center">
+      <section className="bg-white px-4 md:px-16 lg:px-20 py-16 md:py-21 flex flex-col lg:flex-row justify-between items-center gap-8">
         <div className="flex flex-col gap-5 max-w-2xl">
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize">
             Trusted legal partnerships
@@ -59,12 +59,12 @@ const Homepage: React.FC = () => {
       </section>
 
       {/* Practice Areas Icons Section */}
-      <section className="px-18 py-24 bg-lawfirm-cream">
+      <section className="px-4 md:px-16 lg:px-20 py-16 md:py-24 bg-lawfirm-cream">
         <div className="max-w-7xl mx-auto">
           {/* Row 1 */}
-          <div className="flex justify-between items-start gap-6 mb-28">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 lg:mb-28">
             {/* Banking and Finance */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-60">
+            <div className="flex flex-col items-center gap-3 text-center">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -110,7 +110,7 @@ const Homepage: React.FC = () => {
             </div>
 
             {/* Family Law */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-60">
+            <div className="flex flex-col items-center gap-3 text-center">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -148,7 +148,7 @@ const Homepage: React.FC = () => {
             </div>
 
             {/* Business Law */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-60">
+            <div className="flex flex-col items-center gap-3 text-center">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -191,9 +191,9 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* Row 2 */}
-          <div className="flex justify-between items-start gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Real Estate */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-60">
+            <div className="flex flex-col items-center gap-3 text-center">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -227,7 +227,7 @@ const Homepage: React.FC = () => {
             </div>
 
             {/* Civil Law */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-60">
+            <div className="flex flex-col items-center gap-3 text-center">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
@@ -273,7 +273,7 @@ const Homepage: React.FC = () => {
             </div>
 
             {/* Corporate Law */}
-            <div className="flex flex-col items-center gap-3 text-center max-w-60">
+            <div className="flex flex-col items-center gap-3 text-center">
               <svg
                 className="w-12 h-12"
                 viewBox="0 0 48 48"
