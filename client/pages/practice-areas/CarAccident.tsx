@@ -10,12 +10,8 @@ export const CarAccident: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-white font-bold text-4xl md:text-5xl font-['Mulish'] mb-4">
-            Los Angeles Car Accident Lawyers
+            Car Accident Attorney in California
           </h1>
-          <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
-            Expert legal representation for victims of car accidents in
-            California
-          </p>
         </div>
       </section>
 
@@ -25,85 +21,64 @@ export const CarAccident: React.FC = () => {
           {/* Main Content Column */}
           <div className="md:col-span-2">
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Experienced Car Accident Attorneys in Los Angeles
-              </h2>
-              <p className="text-gray-600 text-lg mb-6">
-                Car accidents can happen in an instant, but their effects can
-                last a lifetime. At Aviram Law, APLC, we understand the
-                physical, emotional, and financial toll that car accidents take
-                on victims and their families. Our experienced Los Angeles car
-                accident lawyers are dedicated to fighting for the compensation
-                you deserve.
-              </p>
-              <p className="text-gray-600 text-lg mb-6">
-                With years of experience handling car accident cases throughout
-                California, we have secured millions of dollars in settlements
-                and verdicts for our clients. We know how to investigate
-                accidents, gather evidence, negotiate with insurance companies,
-                and when necessary, take cases to trial.
+              <p className="text-gray-600 text-lg mb-8">
+                Rear-end collisions, intersection accidents, hit & runs, and
+                uninsured drivers. We understand California's comparative fault
+                laws and fight for full compensation.
               </p>
             </section>
 
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Common Types of Car Accidents We Handle
+                Why Choose Aviram Law
               </h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Rear-End Collisions
-                  </h3>
-                  <p className="text-gray-600">
-                    Often caused by distracted driving, following too closely,
-                    or sudden stops.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Head-On Collisions
-                  </h3>
-                  <p className="text-gray-600">
-                    Typically the most severe type of accident with devastating
-                    consequences.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Side-Impact Crashes
-                  </h3>
-                  <p className="text-gray-600">
-                    T-bone accidents often occurring at intersections.
-                  </p>
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                    Multi-Vehicle Accidents
-                  </h3>
-                  <p className="text-gray-600">
-                    Complex cases involving multiple parties and insurance
-                    companies.
-                  </p>
-                </div>
-              </div>
+              <p className="text-gray-600 text-lg mb-6">
+                Our team has recovered millions in auto accident cases. We build
+                strong claims backed by evidence, accident reconstructions, and
+                legal expertise.
+              </p>
             </section>
 
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Our Approach to Car Accident Cases
+                What You May Be Entitled To
               </h2>
-              <div className="space-y-6">
+              <ul className="space-y-3 text-gray-600 text-lg">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-4"></span>
+                  Vehicle repair or replacement
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-4"></span>
+                  Medical bills
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-4"></span>
+                  Lost wages
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-4"></span>
+                  Pain and suffering
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-4"></span>
+                  Long-term care
+                </li>
+              </ul>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                What to Do After an Accident
+              </h2>
+              <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                     1
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-gray-800 mb-2">
-                      Immediate Investigation
-                    </h3>
-                    <p className="text-gray-600">
-                      We act quickly to preserve evidence, interview witnesses,
-                      and document the accident scene.
+                    <p className="text-gray-600 text-lg">
+                      Call 911 and get medical attention
                     </p>
                   </div>
                 </div>
@@ -112,12 +87,8 @@ export const CarAccident: React.FC = () => {
                     2
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-gray-800 mb-2">
-                      Medical Documentation
-                    </h3>
-                    <p className="text-gray-600">
-                      We work with medical professionals to fully document your
-                      injuries and treatment needs.
+                    <p className="text-gray-600 text-lg">
+                      Photograph the scene and damage
                     </p>
                   </div>
                 </div>
@@ -126,13 +97,7 @@ export const CarAccident: React.FC = () => {
                     3
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-gray-800 mb-2">
-                      Insurance Negotiations
-                    </h3>
-                    <p className="text-gray-600">
-                      We handle all communications with insurance companies to
-                      protect your interests.
-                    </p>
+                    <p className="text-gray-600 text-lg">Do not admit fault</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -140,40 +105,11 @@ export const CarAccident: React.FC = () => {
                     4
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-gray-800 mb-2">
-                      Trial Preparation
-                    </h3>
-                    <p className="text-gray-600">
-                      If necessary, we're prepared to take your case to trial
-                      for maximum compensation.
+                    <p className="text-gray-600 text-lg">
+                      Contact Aviram Law immediately
                     </p>
                   </div>
                 </div>
-              </div>
-            </section>
-
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Recent Success Stories
-              </h2>
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                  $2.1 Million Settlement
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Secured a significant settlement for a client who suffered
-                  severe back injuries in a multi-vehicle collision on the 405
-                  freeway. The settlement covered ongoing medical treatment,
-                  lost wages, and pain and suffering.
-                </p>
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">
-                  $850,000 Verdict
-                </h3>
-                <p className="text-gray-600">
-                  Won at trial for a client who sustained traumatic brain injury
-                  in a head-on collision caused by a drunk driver. The verdict
-                  included compensation for lifetime care needs.
-                </p>
               </div>
             </section>
           </div>
@@ -188,50 +124,18 @@ export const CarAccident: React.FC = () => {
                 Get expert legal advice about your car accident case. No fees
                 unless we win.
               </p>
-              <Link
-                to="/contact"
+              <a
+                href="tel:3103883488"
                 className="block bg-blue-600 text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mb-4"
               >
                 Call (310) 388-3488
-              </Link>
+              </a>
               <Link
                 to="/contact"
                 className="block border-2 border-blue-600 text-blue-600 text-center py-3 px-6 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300"
               >
-                Online Consultation
+                Free Consultation
               </Link>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-gray-800 mb-4">
-                What You Can Recover
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Medical expenses
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Lost wages and income
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Pain and suffering
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Property damage
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Future medical care
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Rehabilitation costs
-                </li>
-              </ul>
             </div>
           </div>
         </div>
