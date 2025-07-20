@@ -7,32 +7,32 @@ const testimonials = [
     id: 1,
     text: "Aviram Law helped me get the compensation I deserved after my car accident. Their team was professional, caring, and fought hard for my rights. I couldn't be more grateful for their expertise.",
     name: "Sarah Martinez",
-    title: "Car Accident Client"
+    title: "Car Accident Client",
   },
   {
     id: 2,
     text: "After my workplace injury, I thought I'd never get fair compensation. Aviram Law proved me wrong. They handled everything while I focused on recovery. Excellent service!",
     name: "Michael Chen",
-    title: "Workplace Injury Client"
+    title: "Workplace Injury Client",
   },
   {
     id: 3,
     text: "The team at Aviram Law went above and beyond for my slip and fall case. They explained everything clearly and kept me informed throughout the entire process. Highly recommend!",
     name: "Jennifer Rodriguez",
-    title: "Premises Liability Client"
+    title: "Premises Liability Client",
   },
   {
     id: 4,
     text: "Professional, knowledgeable, and compassionate. Aviram Law helped my family during our wrongful death case with sensitivity and determination. We're forever grateful.",
     name: "David Thompson",
-    title: "Wrongful Death Client"
+    title: "Wrongful Death Client",
   },
   {
     id: 5,
     text: "I was hit by a truck and didn't know where to turn. Aviram Law took on the trucking company and insurance companies and got me a settlement that covers my medical bills and more.",
     name: "Lisa Park",
-    title: "Truck Accident Client"
-  }
+    title: "Truck Accident Client",
+  },
 ];
 
 const TestimonialsSection: React.FC = () => {
@@ -43,7 +43,9 @@ const TestimonialsSection: React.FC = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentTestimonial(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+    );
   };
 
   const current = testimonials[currentTestimonial];
@@ -94,16 +96,36 @@ const TestimonialsSection: React.FC = () => {
               onClick={prevTestimonial}
               className="w-12 h-12 bg-lawfirm-brown rounded-full flex items-center justify-center text-white hover:bg-lawfirm-brown-light transition duration-300"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
             <button
               onClick={nextTestimonial}
               className="w-12 h-12 bg-lawfirm-brown rounded-full flex items-center justify-center text-white hover:bg-lawfirm-brown-light transition duration-300"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           </div>
@@ -114,7 +136,9 @@ const TestimonialsSection: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition duration-300 ${
-                  index === currentTestimonial ? 'bg-lawfirm-brown' : 'bg-gray-300'
+                  index === currentTestimonial
+                    ? "bg-lawfirm-brown"
+                    : "bg-gray-300"
                 }`}
               />
             ))}
@@ -139,12 +163,12 @@ const Homepage: React.FC = () => {
       setIsScrolledFromHero(currentScrollY > heroHeight);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Calculate fade opacity based on scroll (fade out as user scrolls)
-  const fadeOpacity = Math.max(0, 1 - (scrollY / (window.innerHeight * 0.5)));
+  const fadeOpacity = Math.max(0, 1 - scrollY / (window.innerHeight * 0.5));
 
   return (
     <Layout currentPage="home">
@@ -164,21 +188,22 @@ const Homepage: React.FC = () => {
           />
         </video>
 
-                {/* Dark Overlay */}
+        {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
 
         {/* Top Fade for Logo Visibility */}
         <div
           className="absolute top-0 left-0 w-full h-32 z-20 transition-opacity duration-300"
           style={{
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)',
-            opacity: fadeOpacity
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)",
+            opacity: fadeOpacity,
           }}
         ></div>
 
-                        {/* Content */}
+        {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-start pt-16 md:pt-20 gap-5 px-4 md:px-8 max-w-6xl text-center">
-                    <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
+          <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
             California's Leading Personal Injury Law Firm
           </h1>
           <button className="bg-lawfirm-brown text-white font-bold text-xl font-['Mulish'] px-8 py-4 mt-5">
@@ -193,15 +218,27 @@ const Homepage: React.FC = () => {
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize">
             Experienced Legal Representation
           </h2>
-                    <p className="text-black text-xl font-normal leading-relaxed font-['Inter'] mb-6">
-            Aviram Law, APLC is the leading Personal Injury law firm in California, representing injured clients throughout California who are seeking justice for their injuries. Aviram Law, APLC is a litigation and trial firm that seeks to provide customers with the highest level of representation and professionalism to ensure that each case obtains an optimal result.
+          <p className="text-black text-xl font-normal leading-relaxed font-['Inter'] mb-6">
+            Aviram Law, APLC is the leading Personal Injury law firm in
+            California, representing injured clients throughout California who
+            are seeking justice for their injuries. Aviram Law, APLC is a
+            litigation and trial firm that seeks to provide customers with the
+            highest level of representation and professionalism to ensure that
+            each case obtains an optimal result.
           </p>
           <p className="text-black text-xl font-normal leading-relaxed font-['Inter']">
-            Aviram Law, APLC focuses on customer service and the team's passion for the law provides motivation for obtaining justice for clients. We have years of experience in Personal Injury handling all types of cases including but not limited to auto accidents, premises liability, slip and falls, dog bites, wrongful death, and truck accidents. We have litigated complex injury cases, recovering millions of dollars for our clients.
-            <br /><br />
+            Aviram Law, APLC focuses on customer service and the team's passion
+            for the law provides motivation for obtaining justice for clients.
+            We have years of experience in Personal Injury handling all types of
+            cases including but not limited to auto accidents, premises
+            liability, slip and falls, dog bites, wrongful death, and truck
+            accidents. We have litigated complex injury cases, recovering
+            millions of dollars for our clients.
+            <br />
+            <br />
             Call (310) 388-3488 for your free consultation today.
           </p>
-                                    </div>
+        </div>
       </section>
 
       {/* Recent Settlements Section */}
@@ -226,7 +263,9 @@ const Homepage: React.FC = () => {
               <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
                 $1,265,000
               </h3>
-              <p className="text-gray-700 font-['Inter']">Motorcycle Accident</p>
+              <p className="text-gray-700 font-['Inter']">
+                Motorcycle Accident
+              </p>
             </div>
             <div className="bg-white p-6 text-center rounded-lg">
               <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
@@ -273,7 +312,8 @@ const Homepage: React.FC = () => {
           </div>
           <div className="text-center mt-8">
             <p className="text-white text-sm font-['Inter'] opacity-80">
-              Past results do not guarantee future outcomes. Each case is unique.
+              Past results do not guarantee future outcomes. Each case is
+              unique.
             </p>
           </div>
         </div>
@@ -569,18 +609,17 @@ const Homepage: React.FC = () => {
         </div>
       </section>
 
-            {/* Testimonials Section */}
+      {/* Testimonials Section */}
       <TestimonialsSection />
 
       {/* Contact Form Section */}
       <section
         className="relative py-16 md:py-30 px-4 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 bg-cover bg-center"
-                style={{
+        style={{
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg')`,
         }}
       >
         <div className="flex flex-col items-center gap-10 py-16 lg:py-30">
-          
           <h2 className="text-white font-bold text-5xl font-['Mulish'] capitalize text-center max-w-104">
             Request a free consultation
           </h2>
@@ -591,7 +630,7 @@ const Homepage: React.FC = () => {
           </p>
         </div>
 
-                {/* Contact Form */}
+        {/* Contact Form */}
         <div className="bg-lawfirm-cream-dark p-6 md:p-10 flex flex-col gap-6 w-full lg:w-auto lg:min-w-[600px] xl:min-w-[700px]">
           <div className="flex gap-6">
             <div className="flex flex-col gap-1.5 flex-1">

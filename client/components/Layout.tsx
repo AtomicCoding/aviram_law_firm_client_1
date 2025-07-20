@@ -15,8 +15,8 @@ const FreeConsultationForm: React.FC = () => {
       setIsScrolledFromHero(currentScrollY > heroHeight);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,12 +27,12 @@ const FreeConsultationForm: React.FC = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/xldlgpwn', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/xldlgpwn", {
+        method: "POST",
         body: formData,
         headers: {
-          'Accept': 'application/json'
-        }
+          Accept: "application/json",
+        },
       });
 
       if (response.ok) {
@@ -44,7 +44,7 @@ const FreeConsultationForm: React.FC = () => {
         }, 3000);
       }
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error("Form submission error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -52,24 +52,40 @@ const FreeConsultationForm: React.FC = () => {
 
   return (
     <>
-            {/* Floating Form Button */}
-      <div className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
-        isScrolledFromHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'
-      }`}>
+      {/* Floating Form Button */}
+      <div
+        className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
+          isScrolledFromHero
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-16 pointer-events-none"
+        }`}
+      >
         <button
           onClick={() => setIsFormOpen(true)}
           className="bg-lawfirm-brown text-white p-4 rounded-full shadow-lg hover:bg-lawfirm-brown-light transition duration-300 flex items-center gap-2"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+            />
           </svg>
-          <span className="hidden sm:inline font-['Mulish'] font-bold">Free Consultation</span>
+          <span className="hidden sm:inline font-['Mulish'] font-bold">
+            Free Consultation
+          </span>
         </button>
       </div>
 
       {/* Form Modal */}
       {isFormOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <div className="p-6">
               <div className="flex justify-between items-center mb-6">
@@ -80,8 +96,18 @@ const FreeConsultationForm: React.FC = () => {
                   onClick={() => setIsFormOpen(false)}
                   className="text-gray-500 hover:text-gray-700"
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               </div>
@@ -89,19 +115,35 @@ const FreeConsultationForm: React.FC = () => {
               {isSubmitted ? (
                 <div className="text-center py-8">
                   <div className="bg-green-100 p-4 rounded-lg mb-4">
-                    <svg className="w-12 h-12 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-12 h-12 text-green-600 mx-auto mb-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
-                    <h4 className="text-green-800 font-bold text-lg font-['Mulish']">Thank You!</h4>
+                    <h4 className="text-green-800 font-bold text-lg font-['Mulish']">
+                      Thank You!
+                    </h4>
                     <p className="text-green-700 font-['Inter']">
-                      Your consultation request has been received. We'll contact you within 24 hours.
+                      Your consultation request has been received. We'll contact
+                      you within 24 hours.
                     </p>
                   </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2 font-['Inter']" htmlFor="name">
+                    <label
+                      className="block text-gray-700 font-bold mb-2 font-['Inter']"
+                      htmlFor="name"
+                    >
                       Full Name *
                     </label>
                     <input
@@ -115,7 +157,10 @@ const FreeConsultationForm: React.FC = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2 font-['Inter']" htmlFor="email">
+                    <label
+                      className="block text-gray-700 font-bold mb-2 font-['Inter']"
+                      htmlFor="email"
+                    >
                       Email Address *
                     </label>
                     <input
@@ -129,7 +174,10 @@ const FreeConsultationForm: React.FC = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2 font-['Inter']" htmlFor="phone">
+                    <label
+                      className="block text-gray-700 font-bold mb-2 font-['Inter']"
+                      htmlFor="phone"
+                    >
                       Phone Number *
                     </label>
                     <input
@@ -143,7 +191,10 @@ const FreeConsultationForm: React.FC = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2 font-['Inter']" htmlFor="caseType">
+                    <label
+                      className="block text-gray-700 font-bold mb-2 font-['Inter']"
+                      htmlFor="caseType"
+                    >
                       Type of Case
                     </label>
                     <select
@@ -153,21 +204,30 @@ const FreeConsultationForm: React.FC = () => {
                     >
                       <option value="">Select case type</option>
                       <option value="Car Accident">Car Accident</option>
-                      <option value="Motorcycle Accident">Motorcycle Accident</option>
+                      <option value="Motorcycle Accident">
+                        Motorcycle Accident
+                      </option>
                       <option value="Truck Accident">Truck Accident</option>
                       <option value="Bus Accident">Bus Accident</option>
                       <option value="Dog Bite">Dog Bite</option>
                       <option value="Slip and Fall">Slip and Fall</option>
                       <option value="Wrongful Death">Wrongful Death</option>
                       <option value="Burn Injuries">Burn Injuries</option>
-                      <option value="Products Liability">Products Liability</option>
-                      <option value="Traumatic Brain Injury">Traumatic Brain Injury</option>
+                      <option value="Products Liability">
+                        Products Liability
+                      </option>
+                      <option value="Traumatic Brain Injury">
+                        Traumatic Brain Injury
+                      </option>
                       <option value="Other">Other</option>
                     </select>
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 font-bold mb-2 font-['Inter']" htmlFor="message">
+                    <label
+                      className="block text-gray-700 font-bold mb-2 font-['Inter']"
+                      htmlFor="message"
+                    >
                       Tell us about your case *
                     </label>
                     <textarea
@@ -183,8 +243,9 @@ const FreeConsultationForm: React.FC = () => {
                   <div className="text-sm text-gray-600 font-['Inter']">
                     <p>* Required fields</p>
                     <p className="mt-2">
-                      By submitting this form, you agree to be contacted by Aviram Law, APLC regarding your case.
-                      This does not create an attorney-client relationship.
+                      By submitting this form, you agree to be contacted by
+                      Aviram Law, APLC regarding your case. This does not create
+                      an attorney-client relationship.
                     </p>
                   </div>
 
@@ -193,7 +254,7 @@ const FreeConsultationForm: React.FC = () => {
                     disabled={isSubmitting}
                     className="w-full bg-lawfirm-brown text-white py-3 px-6 rounded-lg font-bold font-['Mulish'] hover:bg-lawfirm-brown-light transition duration-300 disabled:opacity-50"
                   >
-                    {isSubmitting ? 'Submitting...' : 'Get Free Consultation'}
+                    {isSubmitting ? "Submitting..." : "Get Free Consultation"}
                   </button>
                 </form>
               )}
@@ -329,7 +390,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             </Link>
           </div>
 
-                    {/* Logo - Center */}
+          {/* Logo - Center */}
           <div className="flex justify-center items-center absolute left-1/2 transform -translate-x-1/2">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff273f29613d947e0adfbbfd1507382bb%2F1ade7ed59b4b4925a0fc5835de5ff495?format=webp&width=800"
@@ -582,7 +643,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             </div>
 
             {/* Find Us Column */}
-                        <div className="flex flex-col items-start gap-8">
+            <div className="flex flex-col items-start gap-8">
               <h3 className="text-white font-bold text-xl font-['Mulish']">
                 Find Us
               </h3>
@@ -650,11 +711,11 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
           </div>
 
           {/* Copyright */}
-                    <p className="text-white text-center text-base font-normal font-['Inter'] opacity-50">
+          <p className="text-white text-center text-base font-normal font-['Inter'] opacity-50">
             ©Copyright Aviram Law, APLC 2025. Designed by MJ Website Design
           </p>
         </div>
-            </footer>
+      </footer>
 
       {/* Free Consultation Form */}
       <FreeConsultationForm />
