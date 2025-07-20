@@ -662,7 +662,10 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             ©Copyright Aviram Law, APLC 2025. Designed by MJ Website Design
           </p>
         </div>
-      </footer>
+            </footer>
+
+      {/* Free Consultation Form */}
+      <FreeConsultationForm />
     </div>
   );
 };
