@@ -149,15 +149,9 @@ const Homepage: React.FC = () => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center gap-5 px-4 md:px-8 max-w-6xl text-center">
-          <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
-            California's Leading Injury Attorneys
+                    <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
+            California's Leading Personal Injury Law Firm
           </h1>
-          <p className="text-white font-bold text-base font-['Inter'] max-w-xl">
-            Aviram Law, APLC represents injured clients throughout California.
-            With years of litigation and trial experience, we've recovered
-            millions for our clients. Free consultations available in English,
-            Spanish, and Hebrew.
-          </p>
           <button className="bg-lawfirm-brown text-white font-bold text-xl font-['Mulish'] px-8 py-4 mt-5">
             Get Free Consultation
           </button>
