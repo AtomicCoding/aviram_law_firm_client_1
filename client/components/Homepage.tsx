@@ -147,8 +147,8 @@ const Homepage: React.FC = () => {
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
 
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center gap-5 px-4 md:px-8 max-w-6xl text-center">
+                {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-start pt-32 md:pt-40 gap-5 px-4 md:px-8 max-w-6xl text-center">
                     <h1 className="text-white font-bold text-5xl font-['Mulish'] uppercase leading-tight max-w-4xl">
             California's Leading Personal Injury Law Firm
           </h1>
