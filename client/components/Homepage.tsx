@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 
@@ -126,6 +126,26 @@ const TestimonialsSection: React.FC = () => {
 };
 
 const Homepage: React.FC = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const [isScrolledFromHero, setIsScrolledFromHero] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollY(currentScrollY);
+
+      // Consider scrolled away from hero when scrolled more than 80% of screen height
+      const heroHeight = window.innerHeight * 0.8;
+      setIsScrolledFromHero(currentScrollY > heroHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate fade opacity based on scroll (fade out as user scrolls)
+  const fadeOpacity = Math.max(0, 1 - (scrollY / (window.innerHeight * 0.5)));
+
   return (
     <Layout currentPage="home">
       {/* Hero Section */}
@@ -144,8 +164,17 @@ const Homepage: React.FC = () => {
           />
         </video>
 
-        {/* Dark Overlay */}
+                {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+
+        {/* Top Fade for Logo Visibility */}
+        <div
+          className="absolute top-0 left-0 w-full h-32 z-20 transition-opacity duration-300"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)',
+            opacity: fadeOpacity
+          }}
+        ></div>
 
                         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-start pt-16 md:pt-20 gap-5 px-4 md:px-8 max-w-6xl text-center">
