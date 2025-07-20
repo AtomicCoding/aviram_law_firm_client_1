@@ -178,22 +178,7 @@ const Homepage: React.FC = () => {
             <br />
             Call (310) 388-3488 for your free consultation today.
           </p>
-          <img
-            className="w-60 h-11"
-            src="https://images.pexels.com/photos/6077447/pexels-photo-6077447.jpeg"
-            alt="Legal partnership documents"
-          />
-        </div>
-        <div
-          className="w-110 h-80 p-6 flex items-end bg-cover bg-center"
-          style={{
-            backgroundImage: `url('https://images.pexels.com/photos/7841799/pexels-photo-7841799.jpeg')`,
-          }}
-        >
-          <span className="text-lawfirm-text-light font-bold text-base font-['Mulish']">
-            Julio Jefferson
-          </span>
-        </div>
+                  </div>
       </section>
 
       {/* Practice Areas Icons Section */}
