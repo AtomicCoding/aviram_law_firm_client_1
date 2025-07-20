@@ -1,10 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const FreeConsultationForm: React.FC = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isScrolledFromHero, setIsScrolledFromHero] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      // Show button when scrolled more than 80% of screen height
+      const heroHeight = window.innerHeight * 0.8;
+      setIsScrolledFromHero(currentScrollY > heroHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -39,8 +52,10 @@ const FreeConsultationForm: React.FC = () => {
 
   return (
     <>
-      {/* Floating Form Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+            {/* Floating Form Button */}
+      <div className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
+        isScrolledFromHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'
+      }`}>
         <button
           onClick={() => setIsFormOpen(true)}
           className="bg-lawfirm-brown text-white p-4 rounded-full shadow-lg hover:bg-lawfirm-brown-light transition duration-300 flex items-center gap-2"
