@@ -172,7 +172,82 @@ const Homepage: React.FC = () => {
             <br /><br />
             Call (310) 388-3488 for your free consultation today.
           </p>
-                  </div>
+                                    </div>
+      </section>
+
+      {/* Recent Settlements Section */}
+      <section className="bg-lawfirm-brown py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 md:px-16 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-white font-bold text-4xl md:text-5xl font-['Mulish'] mb-4">
+              Recent Settlements & Verdicts
+            </h2>
+            <p className="text-white text-lg font-['Inter']">
+              Millions recovered for our clients
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $1,500,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Products Liability</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $1,265,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Motorcycle Accident</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $1,020,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Auto Accident</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $1,000,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Auto Accident</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $975,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Premises Liability</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $820,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Auto Accident</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $500,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Boating Accident</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $500,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Auto Accident</p>
+            </div>
+            <div className="bg-white p-6 text-center rounded-lg">
+              <h3 className="text-lawfirm-brown font-bold text-3xl font-['Mulish'] mb-2">
+                $430,000
+              </h3>
+              <p className="text-gray-700 font-['Inter']">Auto Accident</p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-white text-sm font-['Inter'] opacity-80">
+              Past results do not guarantee future outcomes. Each case is unique.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Practice Areas Icons Section */}
