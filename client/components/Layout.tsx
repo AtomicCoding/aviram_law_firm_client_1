@@ -582,22 +582,42 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage = "home" }) => {
             </div>
 
             {/* Find Us Column */}
-            <div className="flex flex-col items-start gap-8">
+                        <div className="flex flex-col items-start gap-8">
               <h3 className="text-white font-bold text-xl font-['Mulish']">
                 Find Us
               </h3>
               <div className="flex flex-col gap-6">
-                <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  1801 Century Park East, 24th Floor
-                  <br />
-                  Los Angeles, CA 90067
-                </p>
-                <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  (310) 388-3488
-                </p>
-                <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
-                  info@aviramlaw.com
-                </p>
+                <div>
+                  <h4 className="text-white font-bold text-lg font-['Mulish'] mb-2">
+                    Los Angeles Office
+                  </h4>
+                  <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
+                    1801 Century Park East 24th Floor
+                    <br />
+                    Los Angeles, CA 90067
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-white font-bold text-lg font-['Mulish'] mb-2">
+                    Calabasas Office
+                  </h4>
+                  <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
+                    23901 Calabasas Rd. Suite 2074
+                    <br />
+                    Los Angeles, CA 91302
+                  </p>
+                </div>
+                <div className="pt-2">
+                  <p className="text-white text-base font-normal leading-relaxed font-['Inter'] mb-1">
+                    <span className="font-bold">Phone:</span> 310-388-3488
+                  </p>
+                  <p className="text-white text-base font-normal leading-relaxed font-['Inter'] mb-1">
+                    <span className="font-bold">Fax:</span> 310-388-9988
+                  </p>
+                  <p className="text-white text-base font-normal leading-relaxed font-['Inter']">
+                    <span className="font-bold">Email:</span> info@aviramlaw.com
+                  </p>
+                </div>
               </div>
             </div>
 
