@@ -575,8 +575,8 @@ const Homepage: React.FC = () => {
       {/* Contact Form Section */}
       <section
         className="relative py-16 md:py-30 px-4 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://images.pexels.com/photos/6077297/pexels-photo-6077297.jpeg')`,
+                style={{
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg')`,
         }}
       >
         <div className="flex flex-col items-center gap-10 py-16 lg:py-30">
