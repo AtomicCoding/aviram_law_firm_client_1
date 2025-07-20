@@ -486,59 +486,8 @@ const Homepage: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="bg-white py-16 md:py-25 flex flex-col items-center gap-5">
-        <div className="flex flex-col items-center gap-6 max-w-159">
-          <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize text-center">
-            What our client says
-          </h2>
-          <p className="text-black text-base font-normal font-['Inter'] text-center">
-            Our Testimonials
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-between items-center px-4 md:px-16 lg:px-20 w-full gap-8">
-          <div className="flex flex-col gap-5 w-full lg:w-1/2 px-4 lg:px-16">
-            <p className="text-black text-xl font-normal leading-relaxed font-['Inter']">
-              Adipiscing nam neque hendrerit nec pellentesque diam a. Varius
-              quisque odio mauris lectus consequat sed. Pretium purus feugiat
-              volutpat pellentesque.Potenti porta mauris nec vulputate.
-            </p>
-            <div className="flex flex-col gap-3">
-              <h3 className="text-black font-bold text-2xl font-['Mulish']">
-                Kirsten Gutierrez
-              </h3>
-              <p className="text-lawfirm-brown-light font-bold text-base font-['Inter']">
-                Founder K&G Company
-              </p>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="w-0 h-48 bg-lawfirm-brown-light absolute left-5 top-0"></div>
-            <svg
-              className="w-10 h-10 absolute left-0 top-10"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="20" cy="20" r="20" fill="white" />
-              <path
-                d="M25.6738 23.5814C25.6738 24.2946 25.4409 24.8837 24.9749 25.3488C24.54 25.7829 23.9654 26 23.2509 26C22.5364 26 21.9462 25.7519 21.4803 25.2558C21.0143 24.7597 20.7814 24.031 20.7814 23.0698C20.7814 21.8605 21.1541 20.4496 21.8996 18.8372C22.6762 17.2248 23.7168 15.6124 25.0215 14L26 14.8837C25.037 16.155 24.3381 17.3023 23.9032 18.3256C23.4683 19.3178 23.2198 20.2636 23.1577 21.1628H23.2509C23.9654 21.1628 24.54 21.3953 24.9749 21.8605C25.4409 22.2946 25.6738 22.8682 25.6738 23.5814ZM17.8459 23.5814C17.8459 24.2946 17.6284 24.8837 17.1935 25.3488C16.7587 25.7829 16.184 26 15.4695 26C14.7551 26 14.1649 25.7519 13.6989 25.2558C13.233 24.7597 13 24.031 13 23.0698C13 21.8605 13.3728 20.4496 14.1183 18.8372C14.8638 17.2248 15.8889 15.6124 17.1935 14L18.2186 14.8837C17.2557 16.155 16.5412 17.3023 16.0753 18.3256C15.6404 19.3178 15.3919 20.2636 15.3297 21.1628H15.4695C16.184 21.1628 16.7587 21.3953 17.1935 21.8605C17.6284 22.2946 17.8459 22.8682 17.8459 23.5814Z"
-                fill="#94744E"
-              />
-            </svg>
-          </div>
-          <div
-            className="h-62 bg-cover bg-center flex items-end p-9"
-            style={{
-              backgroundImage: `url('https://images.pexels.com/photos/8112172/pexels-photo-8112172.jpeg')`,
-            }}
-          >
-            <span className="text-lawfirm-text-light font-bold text-xl font-['Inter']">
-              Julio Jefferson
-            </span>
-          </div>
-        </div>
-      </section>
+            {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Contact Form Section */}
       <section
