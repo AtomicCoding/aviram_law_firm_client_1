@@ -164,12 +164,12 @@ const Homepage: React.FC = () => {
           <h2 className="text-lawfirm-brown font-bold text-5xl font-['Mulish'] capitalize">
             Experienced Legal Representation
           </h2>
+                    <p className="text-black text-xl font-normal leading-relaxed font-['Inter'] mb-6">
+            Aviram Law, APLC is the leading Personal Injury law firm in California, representing injured clients throughout California who are seeking justice for their injuries. Aviram Law, APLC is a litigation and trial firm that seeks to provide customers with the highest level of representation and professionalism to ensure that each case obtains an optimal result.
+          </p>
           <p className="text-black text-xl font-normal leading-relaxed font-['Inter']">
-            Aviram Law, APLC combines years of litigation experience with
-            personalized attention to achieve optimal results for our clients.
-            We handle personal injury cases throughout California with
-            professionalism and dedication.
-            <br />
+            Aviram Law, APLC focuses on customer service and the team's passion for the law provides motivation for obtaining justice for clients. We have years of experience in Personal Injury handling all types of cases including but not limited to auto accidents, premises liability, slip and falls, dog bites, wrongful death, and truck accidents. We have litigated complex injury cases, recovering millions of dollars for our clients.
+            <br /><br />
             Call (310) 388-3488 for your free consultation today.
           </p>
                   </div>
