@@ -639,8 +639,8 @@ const Homepage: React.FC = () => {
           </p>
         </div>
 
-        {/* Contact Form */}
-        <div className="bg-lawfirm-cream-dark p-6 md:p-10 flex flex-col gap-6 w-full lg:w-auto lg:min-w-96">
+                {/* Contact Form */}
+        <div className="bg-lawfirm-cream-dark p-6 md:p-10 flex flex-col gap-6 w-full lg:w-auto lg:min-w-[600px] xl:min-w-[700px]">
           <div className="flex gap-6">
             <div className="flex flex-col gap-1.5 flex-1">
               <label className="text-black font-bold text-base font-['Inter']">
